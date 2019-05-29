@@ -1,0 +1,16 @@
+print("Bubble sort\n")
+
+n=int(input("enter no of elements\n"))
+
+l=[]
+for i in range(0,n):
+	l.append(input("enter a value\n"))
+print "before sorting",
+print(l)
+
+for i in range(n):
+	for j in range(0,n-i-1):
+		if(l[j]>l[j+1]):
+			l[j],l[j+1]=l[j+1],l[j]
+print "After sorting",
+print(l)
